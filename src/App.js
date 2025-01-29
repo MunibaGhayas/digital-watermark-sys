@@ -12,7 +12,7 @@ import UploadIcon from "@mui/icons-material/Upload";
 import { useState } from "react";
 import { Greedy } from "./components/Greedy";
 import { DivideAndConquer } from "./components/DivideAndConquer";
-import { TransformDomain } from "./components/TransformDomain";
+import { DP } from "./components/DynamicProgramming";
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -63,7 +63,7 @@ function App() {
       const algorithmMap = {
         Greedy: Greedy,
         DivideAndConquer: DivideAndConquer,
-        TransformDomain: TransformDomain,
+        DP: DP,
       };
 
       const selectedAlgorithm = algorithmMap[selectAlgorithm];
@@ -148,7 +148,7 @@ function App() {
             </MenuItem>
             <MenuItem value="DivideAndConquer">Divide And Conquer</MenuItem>
             <MenuItem value="Greedy">Greedy</MenuItem>
-            <MenuItem value="TransformDomain">Transform Domain</MenuItem>
+            <MenuItem value="DP">DP</MenuItem>
           </Select>
         </FormControl>
         <ToggleButtonGroup

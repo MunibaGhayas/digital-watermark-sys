@@ -52,7 +52,7 @@ export const DivideAndConquer = (
       const tileSize = Math.floor(img.width / 8);
       const fontSize = Math.max(Math.floor(tileSize / 3), 10);
       ctx.font = `${fontSize}px Arial`;
-      ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
+      ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
       ctx.filter = "blur(0.9px)";
 
       for (let y = 0; y < img.height; y += tileSize) {

@@ -51,10 +51,9 @@ export const Greedy = (
       applyBlending();
     } else {
       // Multiple watermark logic
-
-      const fontSize = Math.floor(img.width / 16);
+      const fontSize = Math.floor(img.width / 14);
       ctx.font = `${fontSize}px Arial`;
-      ctx.fillStyle = "rgba(33, 32, 32, 0.6)";
+      ctx.fillStyle = "rgba(46, 44, 44, 0.6)";
       ctx.filter = "blur(0.9px)";
 
       const textWidth = ctx.measureText(watermark).width;

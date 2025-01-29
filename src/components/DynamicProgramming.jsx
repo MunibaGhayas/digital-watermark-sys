@@ -30,6 +30,7 @@ export const DP = (image, watermark, setWatermarkImage, isSingleWatermark) => {
             ctx.rotate((-30 * Math.PI) / 180);
             ctx.fillText(watermark, 0, 0);
             ctx.restore();
+            setWatermarkImage(canvas.toDataURL());
         } else {
             // === Multiple Watermarks (Avoid Overlapping) ===
             const watermarkCanvas = document.createElement("canvas");
